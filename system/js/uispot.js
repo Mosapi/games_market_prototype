@@ -30,7 +30,7 @@ var startY = 0;
 
 */
 //====== MIN ====== //
-min_sel.addEventListener("dragstart", (e) => {
+min_sel.addEventListener("mousedown", (e) => {
  min_drag = true
  const style = window.getComputedStyle(min_sel)
  const transform = new DOMMatrixReadOnly(style.transform);
@@ -44,7 +44,6 @@ min_sel.addEventListener("dragstart", (e) => {
 });
 
 //document.body.addEventListener("mousemove", (e) => {
-	/*
 rmodule.addEventListener("mousemove", (e) => {
 
   if(!min_drag){
@@ -55,7 +54,7 @@ rmodule.addEventListener("mousemove", (e) => {
 		  min_sel.style.transform = "translate("+packtX+"px, 0px)";
 	  }
   }
-});*/
+});
 //====== MIN ====== //
 //====== MAX ====== //
 max_sel.addEventListener("mousedown", (e) => {

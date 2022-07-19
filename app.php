@@ -16,14 +16,14 @@ require_once ('modules/forms/header.php');
 <?
 if (isset($_SESSION['user_id'])) {
 				 echo'
-			<div class=""><a><span id="cab" class="mf_t"><img src=""></span></a></div>
-			<div class=""><a href="/user/1"><span id="logi" class="mf_t"><img src=""></span></a></div>
-			<div class=""><a href="/logout"><span id="sigup" class="mf_t"><img src=""></span></a></div>
+				<div class="c_mod"><a href="/user/1"><span class="mf_t _q"><img src="/content/ico/prof.png"></span></a></div>
+				<div class="c_mod"><a><span id="cart" class="mf_t _r"><img src="/content/ico/cart.png"></span></a><div id="cart_val"></div></div>
+				<div class="c_mod"><a href="#favorite"><span id="favor" class="mf_t _s"><img src="/content/ico/fav.png"></span></a></div>
 			';
 				}else{
 				 echo'
-			<div class=""><a href="/auth"><span id="logi" class="mf_t"><img src=""></span></a></div>
-			<div class=""><a href="/new"><span id="sigup" class="mf_t"><img src=""></span></a></div>
+				<div class="c_mod"><a href="/auth"><span class="mf_t _q"><img src="/content/ico/prof.png"></span></a></div>
+				<div class="c_mod"><a href="/new"><span class="mf_t _l"><img src="/content/ico/reg.png"></span></a></div>
 				 ';
 				}
 ?>

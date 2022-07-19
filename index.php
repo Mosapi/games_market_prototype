@@ -16,13 +16,15 @@ require_once ('modules/forms/header.php');
 <?
 if (isset($_SESSION['user_id'])) {
 				 echo'
-			<div class=""><a href="/user/1"><span id="logi" class="mf_t"><img src="/content/sys/log_w.png" style="width:35px;"></span></a></div>
-			<div class=""><a href="/logout"><span id="sigup" class="mf_t"><img src="/content/sys/reg_w.png" style="width:35px;"></span></a></div>
+			<div class="c_mod"><a href="content/Alauncher.exe"><span id="down" class="mf_t _b"><img src="content/ico/down.png"></span></a></div>
+				<div class="c_mod"><a><span id="cart" class="mf_t _r"><img src="content/ico/cart.png"></span></a><div id="cart_val"></div></div>
+				<div class="c_mod"><a href="/user/1"><span class="mf_t _q"><img src="/content/ico/prof.png"></span></a></div>
 				 ';
 				}else{
 				 echo'
-			<div class=""><a href="/auth"><span id="logi" class="mf_t"><img src="/content/sys/user_w.png" style="width:35px;"></span></a></div>
-			<div class=""><a href="/new"><span id="sigup" class="mf_t"><img src="/content/sys/reg_w.png" style="width:35px;"></span></a></div>
+			<div class="c_mod"><a href="content/Alauncher.exe"><span id="down" class="mf_t _b"><img src="/content/ico/down.png"></span></a></div>
+				<div class="c_mod"><a href="/auth"><span class="mf_t _q"><img src="/content/ico/prof.png"></span></a></div>
+				<div class="c_mod"><a href="/new"><span id="favor" class="mf_t _l"><img src="/content/ico/reg.png"></span></a></div>
 				 ';
 				}
 ?>
@@ -209,7 +211,34 @@ if (isset($_SESSION['user_id'])) {
 		<div style='height:30px;'></div>
 	</div>
 </div>
-<div class='top_rd'><p>Рандомные Тайтлы</p></div>
+<div class='top_rd'><p>Случайный Тайтл</p></div>
+<div id='header' class='_t' style="border-radius:6px;box-shadow:none;background-image: url(content/afon/na11.png);background-size: cover;background-position-y: -150px;">
+<div style="background-color:rgb(0 0 0 / 20%);height:360px;border-radius:6px;">
+	<div style='height:10px;'></div>
+		<div style='padding: 20px 40px 0px 20px;display:flex;justify-content:flex-end;'>
+			<div class='krug_g4' style='margin:5px 15px;'>
+				<div style="width:400px;height:270px;background-color:#000;border-radius:6px;"></div>
+			</div>
+			<div class='krug_g4' style='margin:5px 15px;'>
+				<div style="color:#fff;font-weight:600;font-size:14px;">Nier: Automata</div>
+				<div style="color:#fff;font-weight:300;font-size:11px;margin:20px 0px;text-transform:none;"><span>Nier: Automata (NieR new project) — это непрямой сиквел NIER, действие которого разворачивается на порабощенной боевыми роботами Земле. Игроки берут на себя роль боевых андроидов из подразделений YoRHa. Геймплей представляет собой гибрид игрового стиля NieR / Drakengard и Platinum Games (например, Bayonetta). Некоторые элементы из Nier, которые перенесены и дальше, - это несколько типов оружия, атаки снарядами и уклонение.</span></div>
+				<div >
+					<div style="color:#fff;font-weight:600;font-size: 14pt;float: right;padding: 10px 8px;background-color: #857666;border-radius: 6px;">2999 P</div>
+				</div>
+				<div style="display:flex;">
+					<div class="c_mod"><a href="/app/NierAutomata"><span id="cart" class="mf_t _q"><img src="/content/ico/page.png"></span></a><div id="cart_val"></div></div>
+					<div class="c_mod"><a><span id="cart" class="mf_t _r"><img src="/content/ico/cart.png"></span></a><div id="cart_val"></div></div>
+					<div class="c_mod"><a href="#favorite"><span id="favor" class="mf_t _s"><img src="/content/ico/fav.png"></span></a></div>
+				</div>
+			</div>
+			<div class='krug_g3' style='margin:5px 15px;'>
+				<div class='krug_1' style='width:170px;height:270px;'><a href='/app/NierAutomata'><img style='width:100%;height:100%;border-radius:6px;box-shadow:0 0 6px #484848;' src='/content/bann/nir2_b.jpg' class='krug_im'></a></div>
+			</div>
+		</div>
+		<div style='height:30px;'></div>
+	</div>
+</div>
+<div class='top_rd'><div style='height:60px;'></div></div>
 <div id='header' class='_t' style='background-color:#484848;color:#fff;border-radius:6px;'>
 <div>
 	<div style='height:10px;'></div>

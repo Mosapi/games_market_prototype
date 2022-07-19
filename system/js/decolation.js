@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	bpage = document.querySelector(df_uapp);
 	blbut = document.querySelectorAll(df_rubs); // all selectors bottom
 	barow = document.querySelectorAll(df_arrow); // all arrows
+	
+	//задавать дефолтовые параметры отсюда при загрузке страницы
 
 	// auto scroll selectors + banners
 	setInterval(() => bl_update(), df_timer);
